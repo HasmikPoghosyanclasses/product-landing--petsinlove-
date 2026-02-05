@@ -19,6 +19,7 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#products">Products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#benefits">Benefits</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#pricing">Pricing</a></li>
@@ -128,6 +129,102 @@
                 </div>
             </div>
         </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Visual Stories</span>
+                    <h2 class="section-title">Happy Pets Gallery</h2>
+                    <p class="section-description">See our products in action with real pets</p>
+                </div>
+                
+                <!-- Gallery Filters -->
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="dogs">Dogs</button>
+                    <button class="filter-btn" data-filter="cats">Cats</button>
+                    <button class="filter-btn" data-filter="accessories">Accessories</button>
+                </div>
+                
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="dogs" data-index="0">
+                        <div class="gallery-image">
+                            <span class="gallery-emoji">🐕</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Happy Golden</span>
+                            <span class="gallery-subtitle">Enjoying organic treats</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cats" data-index="1">
+                        <div class="gallery-image">
+                            <span class="gallery-emoji">🐱</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Cozy Luna</span>
+                            <span class="gallery-subtitle">In her luxury bed</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="accessories" data-index="2">
+                        <div class="gallery-image">
+                            <span class="gallery-emoji">🎀</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Premium Collar</span>
+                            <span class="gallery-subtitle">Handcrafted leather</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="dogs" data-index="3">
+                        <div class="gallery-image">
+                            <span class="gallery-emoji">🦮</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Playful Buddy</span>
+                            <span class="gallery-subtitle">With interactive toys</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cats" data-index="4">
+                        <div class="gallery-image">
+                            <span class="gallery-emoji">🐈</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Groomed Whiskers</span>
+                            <span class="gallery-subtitle">Fresh from spa day</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="accessories" data-index="5">
+                        <div class="gallery-image">
+                            <span class="gallery-emoji">🧸</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-title">Plush Toys</span>
+                            <span class="gallery-subtitle">Eco-friendly materials</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">❮</button>
+            <div class="lightbox-content">
+                <div class="lightbox-image">
+                    <span class="lightbox-emoji" id="lightbox-emoji">🐕</span>
+                </div>
+                <div class="lightbox-info">
+                    <h3 class="lightbox-title" id="lightbox-title">Image Title</h3>
+                    <p class="lightbox-subtitle" id="lightbox-subtitle">Image description</p>
+                </div>
+                <div class="lightbox-counter">
+                    <span id="lightbox-current">1</span> / <span id="lightbox-total">6</span>
+                </div>
+            </div>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">❯</button>
+        </div>
 
         <!-- Benefits Section -->
         <section id="benefits" class="benefits">
