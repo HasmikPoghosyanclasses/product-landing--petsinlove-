@@ -3,13 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetsInLove - Premium Pet Care Products</title>
+    <title>PetsInLove - Find Your Pet's Soulmate</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Floating Hearts Animation -->
+    <div class="floating-hearts" aria-hidden="true">
+        <span class="heart">💕</span>
+        <span class="heart">💗</span>
+        <span class="heart">💖</span>
+        <span class="heart">💕</span>
+        <span class="heart">💗</span>
+        <span class="heart">💖</span>
+        <span class="heart">💕</span>
+        <span class="heart">💗</span>
+        <span class="heart">💖</span>
+        <span class="heart">💕</span>
+        <span class="heart">💗</span>
+        <span class="heart">💖</span>
+        <span class="heart">💕</span>
+        <span class="heart">💗</span>
+        <span class="heart">💖</span>
+        <span class="heart">💕</span>
+        <span class="heart">💗</span>
+        <span class="heart">💖</span>
+        <span class="heart">💕</span>
+        <span class="heart">💗</span>
+        <span class="heart">💖</span>
+        <span class="heart">💕</span>
+        <span class="heart">💗</span>
+        <span class="heart">💖</span>
+        <span class="heart">💕</span>
+        <span class="heart">💗</span>
+        <span class="heart">💖</span>
+        <span class="heart">💕</span>
+        <span class="heart">💗</span>
+        <span class="heart">💖</span>
+    </div>
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
@@ -18,8 +51,7 @@
                 <span class="logo-text">PetsInLove</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#products">Products</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#gallery" class="nav-gallery" title="no strings attached">Gallery</a></li>
                 <li><a href="#benefits">Benefits</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#pricing">Pricing</a></li>
@@ -32,97 +64,78 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content container">
-                <h1 class="hero-title">Because Your Pet Deserves <span class="highlight">Extraordinary</span> Love</h1>
-                <p class="hero-tagline">Premium pet care products crafted with love. From organic treats to luxury accessories, give your furry friend the life they deserve.</p>
+                <h1 class="hero-title">No One Wants to Be <span class="highlight">Lonely</span>, Not Even Your Hamster</h1>
+                <p class="hero-tagline">Help your furry friends find their true love. PetsInLove connects pets with their perfect companions — because every pet deserves a soulmate.</p>
                 <div class="hero-cta">
-                    <a href="#pricing" class="btn btn-primary">Shop Now</a>
-                    <a href="#products" class="btn btn-secondary">Explore Products</a>
+                    <a href="#pricing" class="btn btn-primary">Find a Match</a>
+                    <a href="#products" class="btn btn-secondary">How It Works</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">50K+</span>
-                        <span class="stat-label">Happy Pets</span>
+                        <span class="stat-number">7+</span>
+                        <span class="stat-label">Happy Matches</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">4.9</span>
-                        <span class="stat-label">Rating</span>
+                        <span class="stat-number">12%</span>
+                        <span class="stat-label">Success Rate</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Organic</span>
+                        <span class="stat-number">💀</span>
+                        <span class="stat-label">Only One Death</span>
                     </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-image-placeholder">
-                    <span>🐕</span>
                 </div>
             </div>
         </section>
 
-        <!-- Product Showcase Section -->
-        <section id="products" class="products">
+        <!-- Pet Profiles Showcase Section -->
+        <section id="profiles" class="products profiles-section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Our Collection</span>
-                    <h2 class="section-title">Premium Products for Your Beloved Pets</h2>
-                    <p class="section-description">Handpicked selection of the finest pet care essentials</p>
+                    <span class="section-tag">🔥 Hot Singles In Your Area</span>
+                    <h2 class="section-title">Meet Our Adorable Singles</h2>
+                    <p class="section-description">Swipe right on love. These cuties are ready to mingle!</p>
                 </div>
-                <div class="product-grid">
-                    <article class="product-card">
-                        <div class="product-image">
-                            <span class="product-emoji">🦴</span>
+                <div class="product-grid profile-grid">
+                    <article class="product-card profile-card">
+                        <div class="product-image profile-image">
+                            <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop&crop=face" alt="Jose the ginger cat in a tuxedo" class="profile-photo">
                         </div>
                         <div class="product-content">
-                            <span class="product-category">Treats</span>
-                            <h3 class="product-title">Organic Treat Box</h3>
-                            <p class="product-description">100% natural, grain-free treats made with real chicken and sweet potato.</p>
+                            <span class="product-category">🐱 Cat • 3 miles away</span>
+                            <h3 class="product-title">Jose, 4</h3>
+                            <p class="product-description">Playful 😸 Has many friends 👯 Loves long walks and peeing at the beach 🏖️ Looking for someone to nap with.</p>
                             <div class="product-footer">
-                                <span class="product-price">$29.99</span>
-                                <a href="#pricing" class="btn btn-small">Add to Cart</a>
+                                <span class="profile-status">✅ Verified Cutie</span>
+                                <button class="btn btn-small btn-heart">❤️ Swipe Right</button>
                             </div>
                         </div>
                     </article>
-                    <article class="product-card featured">
-                        <div class="product-badge">Best Seller</div>
-                        <div class="product-image">
-                            <span class="product-emoji">🛏️</span>
+                    <article class="product-card profile-card featured">
+                        <div class="product-badge">Super Like 💫</div>
+                        <div class="product-image profile-image">
+                            <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=400&h=400&fit=crop" alt="Manuel the artistic rat" class="profile-photo">
                         </div>
                         <div class="product-content">
-                            <span class="product-category">Comfort</span>
-                            <h3 class="product-title">Luxury Pet Bed</h3>
-                            <p class="product-description">Memory foam comfort with washable organic cotton cover. Your pet's dream bed.</p>
+                            <span class="product-category">🐀 Rat • 1 mile away</span>
+                            <h3 class="product-title">Manuel, 2</h3>
+                            <p class="product-description">Fun and artistic 🎨 Likes reading books in a cozy sweater 📚 Great at catching fish 🐟 Will cook for you!</p>
                             <div class="product-footer">
-                                <span class="product-price">$89.99</span>
-                                <a href="#pricing" class="btn btn-small">Add to Cart</a>
+                                <span class="profile-status">🏆 Top Pick</span>
+                                <button class="btn btn-small btn-heart">❤️ Swipe Right</button>
                             </div>
                         </div>
                     </article>
-                    <article class="product-card">
-                        <div class="product-image">
-                            <span class="product-emoji">🧴</span>
+                    <article class="product-card profile-card">
+                        <div class="product-image profile-image">
+                            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=400&fit=crop&crop=face" alt="Max the golden retriever" class="profile-photo">
                         </div>
                         <div class="product-content">
-                            <span class="product-category">Grooming</span>
-                            <h3 class="product-title">Spa Grooming Kit</h3>
-                            <p class="product-description">Gentle shampoo, conditioner, and brush set for a salon-quality coat at home.</p>
+                            <span class="product-category">🐕 Dog • 5 miles away</span>
+                            <h3 class="product-title">Max, 5</h3>
+                            <p class="product-description">No red flags here 🚫🚩 Single and ready to mingle 💕 Actively looking for a life partner. Will share my treats!</p>
                             <div class="product-footer">
-                                <span class="product-price">$45.99</span>
-                                <a href="#pricing" class="btn btn-small">Add to Cart</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-image">
-                            <span class="product-emoji">🎾</span>
-                        </div>
-                        <div class="product-content">
-                            <span class="product-category">Toys</span>
-                            <h3 class="product-title">Interactive Toy Set</h3>
-                            <p class="product-description">Keep your pet entertained for hours with our durable, eco-friendly toy collection.</p>
-                            <div class="product-footer">
-                                <span class="product-price">$34.99</span>
-                                <a href="#pricing" class="btn btn-small">Add to Cart</a>
+                                <span class="profile-status">💎 Premium Member</span>
+                                <button class="btn btn-small btn-heart">❤️ Swipe Right</button>
                             </div>
                         </div>
                     </article>
@@ -151,56 +164,56 @@
                 <div class="gallery-grid">
                     <div class="gallery-item" data-category="dogs" data-index="0">
                         <div class="gallery-image">
-                            <span class="gallery-emoji">🐕</span>
+                            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=400&fit=crop" alt="Happy Golden Retriever" class="gallery-photo">
                         </div>
                         <div class="gallery-overlay">
                             <span class="gallery-title">Happy Golden</span>
-                            <span class="gallery-subtitle">Enjoying organic treats</span>
+                            <span class="gallery-subtitle">Looking for love 💕</span>
                         </div>
                     </div>
                     <div class="gallery-item" data-category="cats" data-index="1">
                         <div class="gallery-image">
-                            <span class="gallery-emoji">🐱</span>
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=400&fit=crop" alt="Cute Orange Cat" class="gallery-photo">
                         </div>
                         <div class="gallery-overlay">
-                            <span class="gallery-title">Cozy Luna</span>
-                            <span class="gallery-subtitle">In her luxury bed</span>
+                            <span class="gallery-title">Cozy Ginger</span>
+                            <span class="gallery-subtitle">Swipe right? 😻</span>
                         </div>
                     </div>
-                    <div class="gallery-item" data-category="accessories" data-index="2">
+                    <div class="gallery-item" data-category="dogs" data-index="2">
                         <div class="gallery-image">
-                            <span class="gallery-emoji">🎀</span>
+                            <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=400&h=400&fit=crop" alt="Corgi Dog" class="gallery-photo">
                         </div>
                         <div class="gallery-overlay">
-                            <span class="gallery-title">Premium Collar</span>
-                            <span class="gallery-subtitle">Handcrafted leather</span>
+                            <span class="gallery-title">Sir Fluffington</span>
+                            <span class="gallery-subtitle">Royalty seeking queen 👑</span>
                         </div>
                     </div>
-                    <div class="gallery-item" data-category="dogs" data-index="3">
+                    <div class="gallery-item" data-category="cats" data-index="3">
                         <div class="gallery-image">
-                            <span class="gallery-emoji">🦮</span>
+                            <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=400&h=400&fit=crop" alt="Tabby Cat" class="gallery-photo">
                         </div>
                         <div class="gallery-overlay">
-                            <span class="gallery-title">Playful Buddy</span>
-                            <span class="gallery-subtitle">With interactive toys</span>
+                            <span class="gallery-title">Mystery Mike</span>
+                            <span class="gallery-subtitle">Enigmatic & available 🐱</span>
                         </div>
                     </div>
-                    <div class="gallery-item" data-category="cats" data-index="4">
+                    <div class="gallery-item" data-category="dogs" data-index="4">
                         <div class="gallery-image">
-                            <span class="gallery-emoji">🐈</span>
+                            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=400&fit=crop" alt="Labrador Puppy" class="gallery-photo">
                         </div>
                         <div class="gallery-overlay">
-                            <span class="gallery-title">Groomed Whiskers</span>
-                            <span class="gallery-subtitle">Fresh from spa day</span>
+                            <span class="gallery-title">Baby Bruno</span>
+                            <span class="gallery-subtitle">Young & adventurous 🐶</span>
                         </div>
                     </div>
-                    <div class="gallery-item" data-category="accessories" data-index="5">
+                    <div class="gallery-item" data-category="cats" data-index="5">
                         <div class="gallery-image">
-                            <span class="gallery-emoji">🧸</span>
+                            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=400&fit=crop" alt="White and Grey Cat" class="gallery-photo">
                         </div>
                         <div class="gallery-overlay">
-                            <span class="gallery-title">Plush Toys</span>
-                            <span class="gallery-subtitle">Eco-friendly materials</span>
+                            <span class="gallery-title">Princess Whiskers</span>
+                            <span class="gallery-subtitle">High standards only 👸</span>
                         </div>
                     </div>
                 </div>
@@ -230,24 +243,24 @@
         <section id="benefits" class="benefits">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Why Choose Us</span>
-                    <h2 class="section-title">The PetsInLove Difference</h2>
+                    <span class="section-tag">Why PetsInLove?</span>
+                    <h2 class="section-title">Find Love. Maybe. No Promises.</h2>
                 </div>
                 <div class="benefits-grid">
                     <div class="benefit-card">
-                        <div class="benefit-icon">🌿</div>
-                        <h3 class="benefit-title">100% Organic</h3>
-                        <p class="benefit-description">All our products are made with certified organic ingredients. No chemicals, no fillers—just pure goodness for your pet.</p>
+                        <div class="benefit-icon">🔥</div>
+                        <h3 class="benefit-title">Unlimited Swipes*</h3>
+                        <p class="benefit-description">Swipe right on every fluffy face you see. *Terms and conditions apply. Your paw may get tired.</p>
                     </div>
                     <div class="benefit-card">
-                        <div class="benefit-icon">🚚</div>
-                        <h3 class="benefit-title">Free Shipping</h3>
-                        <p class="benefit-description">Enjoy free shipping on all orders over $50. Fast delivery within 2-3 business days to your doorstep.</p>
+                        <div class="benefit-icon">📍</div>
+                        <h3 class="benefit-title">Pets Near You</h3>
+                        <p class="benefit-description">Find singles in your area! Whether they're 3 miles or 3 houses away, love is closer than you think. Maybe.</p>
                     </div>
                     <div class="benefit-card">
-                        <div class="benefit-icon">💝</div>
-                        <h3 class="benefit-title">Satisfaction Guaranteed</h3>
-                        <p class="benefit-description">Not happy? Full refund within 30 days, no questions asked. Your pet's happiness is our top priority.</p>
+                        <div class="benefit-icon">🛡️</div>
+                        <h3 class="benefit-title">Totally Safe*</h3>
+                        <p class="benefit-description">All profiles are verified by our team of one intern. We can't guarantee they won't try to steal your treats though.</p>
                     </div>
                 </div>
             </div>
@@ -257,46 +270,47 @@
         <section id="testimonials" class="testimonials">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Happy Customers</span>
-                    <h2 class="section-title">What Pet Parents Say</h2>
+                    <span class="section-tag">💔 Honest Reviews</span>
+                    <h2 class="section-title">What Our Users Say</h2>
+                    <p class="section-description" style="color: rgba(255,255,255,0.6);">Real stories. Real heartbreak. Real chaos.</p>
                 </div>
                 <div class="testimonials-grid">
-                    <article class="testimonial-card">
-                        <div class="testimonial-rating">★★★★★</div>
+                    <article class="testimonial-card bad-review">
+                        <div class="testimonial-rating one-star">★☆☆☆☆</div>
                         <blockquote class="testimonial-quote">
-                            "My golden retriever Max has never been happier! The organic treats are his absolute favorite, and I love knowing exactly what's in them. The quality is unmatched!"
+                            "HE WAS MARRIED. Three kittens at home and he never mentioned them once. I gave him my heart and my favorite squeaky toy. I am absolutely heartbroken. 💔 This app ruined my life. Would not recommend."
                         </blockquote>
                         <div class="testimonial-author">
-                            <div class="author-avatar">👩</div>
+                            <div class="author-avatar">😿</div>
                             <div class="author-info">
-                                <span class="author-name">Sarah Johnson</span>
-                                <span class="author-pet">Mom of Max 🐕</span>
+                                <span class="author-name">Whiskers McFluffington</span>
+                                <span class="author-pet">Persian Cat • Devastated</span>
                             </div>
                         </div>
                     </article>
-                    <article class="testimonial-card">
-                        <div class="testimonial-rating">★★★★★</div>
+                    <article class="testimonial-card bad-review">
+                        <div class="testimonial-rating two-star">★★☆☆☆</div>
                         <blockquote class="testimonial-quote">
-                            "The luxury pet bed was worth every penny. My cat Luna used to sleep everywhere except her bed—now she won't leave it! Best purchase I've made for her."
+                            "The date went well at first... until he tried to LITERALLY KILL ME. Chased me around the park for 20 minutes. Turns out he was a cat. THE APP MATCHED ME WITH A CAT. I'm a mouse. 🐭💀 Giving 2 stars because the restaurant was nice."
                         </blockquote>
                         <div class="testimonial-author">
-                            <div class="author-avatar">👨</div>
+                            <div class="author-avatar">🐭</div>
                             <div class="author-info">
-                                <span class="author-name">Michael Chen</span>
-                                <span class="author-pet">Dad of Luna 🐱</span>
+                                <span class="author-name">Squeaky Peterson</span>
+                                <span class="author-pet">Field Mouse • Traumatized</span>
                             </div>
                         </div>
                     </article>
-                    <article class="testimonial-card">
-                        <div class="testimonial-rating">★★★★★</div>
+                    <article class="testimonial-card bad-review">
+                        <div class="testimonial-rating one-star">★☆☆☆☆</div>
                         <blockquote class="testimonial-quote">
-                            "Fast shipping, beautiful packaging, and my poodle Coco absolutely loves the grooming kit. Her coat has never looked better. Will definitely order again!"
+                            "He said he was 'a little husky.' He was ACTUALLY a husky. I'm a chihuahua. The size difference was... significant. Also he ate all my food on the first date. Unmatched immediately. 😤"
                         </blockquote>
                         <div class="testimonial-author">
-                            <div class="author-avatar">👩</div>
+                            <div class="author-avatar">🐕</div>
                             <div class="author-info">
-                                <span class="author-name">Emily Rodriguez</span>
-                                <span class="author-pet">Mom of Coco 🐩</span>
+                                <span class="author-name">Tiny Rodriguez</span>
+                                <span class="author-pet">Chihuahua • Angry</span>
                             </div>
                         </div>
                     </article>
@@ -308,68 +322,68 @@
         <section id="pricing" class="pricing">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Pricing Plans</span>
-                    <h2 class="section-title">Choose Your Perfect Plan</h2>
-                    <p class="section-description">Subscribe and save on premium pet care delivered monthly</p>
+                    <span class="section-tag">💳 Pricing</span>
+                    <h2 class="section-title">Upgrade Your Love Life</h2>
+                    <p class="section-description">Because desperation has a price tag</p>
                 </div>
                 <div class="pricing-grid">
                     <article class="pricing-card">
                         <div class="pricing-header">
-                            <h3 class="pricing-name">Starter</h3>
-                            <p class="pricing-description">Perfect for trying out</p>
+                            <h3 class="pricing-name">PetsInLove Basic</h3>
+                            <p class="pricing-description">For the casually lonely</p>
                         </div>
                         <div class="pricing-price">
                             <span class="price-currency">$</span>
-                            <span class="price-amount">19</span>
+                            <span class="price-amount">0</span>
                             <span class="price-period">/month</span>
                         </div>
                         <ul class="pricing-features">
-                            <li>✓ 1 Treat Box Monthly</li>
-                            <li>✓ Free Shipping</li>
-                            <li>✓ 10% Off All Products</li>
-                            <li>✗ Exclusive Access</li>
-                            <li>✗ Priority Support</li>
+                            <li>✓ Limited swipes (like 3)</li>
+                            <li>✓ See who hates you</li>
+                            <li>✓ One Super Like per year</li>
+                            <li>✗ No take-backs on swipes</li>
+                            <li>✗ Matches expire in 24hrs</li>
                         </ul>
-                        <a href="#" class="btn btn-outline">Get Started</a>
+                        <a href="#" class="btn btn-outline">Stay Lonely Free</a>
                     </article>
-                    <article class="pricing-card popular">
-                        <div class="pricing-badge">Most Popular</div>
+                    <article class="pricing-card popular tinder-gold">
+                        <div class="pricing-badge">🔥 Most Desperate</div>
                         <div class="pricing-header">
-                            <h3 class="pricing-name">Premium</h3>
-                            <p class="pricing-description">Best value for pet lovers</p>
+                            <h3 class="pricing-name">PetsInLove Gold</h3>
+                            <p class="pricing-description">For the romantically ambitious</p>
                         </div>
                         <div class="pricing-price">
                             <span class="price-currency">$</span>
-                            <span class="price-amount">39</span>
+                            <span class="price-amount">29</span>
                             <span class="price-period">/month</span>
                         </div>
                         <ul class="pricing-features">
-                            <li>✓ 2 Treat Boxes Monthly</li>
-                            <li>✓ Free Shipping</li>
-                            <li>✓ 20% Off All Products</li>
-                            <li>✓ Exclusive Access</li>
-                            <li>✓ Priority Support</li>
+                            <li>✓ Unlimited swipes!</li>
+                            <li>✓ See who likes you first</li>
+                            <li>✓ 5 Super Likes per day</li>
+                            <li>✓ Passport to any dog park</li>
+                            <li>✓ Undo accidental left swipes</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Get Started</a>
+                        <a href="#" class="btn btn-primary btn-gold">Get Gold 💛</a>
                     </article>
-                    <article class="pricing-card">
+                    <article class="pricing-card tinder-platinum">
                         <div class="pricing-header">
-                            <h3 class="pricing-name">Family</h3>
-                            <p class="pricing-description">For multi-pet households</p>
+                            <h3 class="pricing-name">PetsInLove Platinum</h3>
+                            <p class="pricing-description">For the hopelessly romantic</p>
                         </div>
                         <div class="pricing-price">
                             <span class="price-currency">$</span>
-                            <span class="price-amount">69</span>
+                            <span class="price-amount">49</span>
                             <span class="price-period">/month</span>
                         </div>
                         <ul class="pricing-features">
-                            <li>✓ 4 Treat Boxes Monthly</li>
-                            <li>✓ Free Express Shipping</li>
-                            <li>✓ 30% Off All Products</li>
-                            <li>✓ Exclusive Access</li>
-                            <li>✓ 24/7 VIP Support</li>
+                            <li>✓ Everything in Gold</li>
+                            <li>✓ Priority likes (be seen first!)</li>
+                            <li>✓ Message before matching</li>
+                            <li>✓ See who's checking you out</li>
+                            <li>✓ Dedicated wingman support</li>
                         </ul>
-                        <a href="#" class="btn btn-outline">Get Started</a>
+                        <a href="#" class="btn btn-outline btn-platinum">Go Platinum ✨</a>
                     </article>
                 </div>
             </div>
@@ -382,55 +396,56 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="#" class="logo">
-                        <span class="logo-icon">🐾</span>
+                        <span class="logo-icon">🔥</span>
                         <span class="logo-text">PetsInLove</span>
                     </a>
-                    <p class="footer-tagline">Premium pet care products crafted with love.</p>
+                    <p class="footer-tagline">Swipe right. Find love. Maybe. No guarantees.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>Products</h4>
+                        <h4>Dating</h4>
                         <ul>
-                            <li><a href="#products">Treats</a></li>
-                            <li><a href="#products">Beds</a></li>
-                            <li><a href="#products">Grooming</a></li>
-                            <li><a href="#products">Toys</a></li>
+                            <li><a href="#">Find a Match</a></li>
+                            <li><a href="#">Success Stories*</a></li>
+                            <li><a href="#">Safety Tips</a></li>
+                            <li><a href="#">Dating Advice</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h4>Company</h4>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About (We're 1 Person)</a></li>
+                            <li><a href="#">Careers (Pls Help)</a></li>
+                            <li><a href="#">Press (None Yet)</a></li>
+                            <li><a href="#">Contact (Maybe)</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h4>Support</h4>
+                        <h4>Legal Stuff</h4>
                         <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Shipping</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy 🍪</a></li>
+                            <li><a href="#">Don't Sue Us</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-social">
-                    <h4>Follow Us</h4>
+                    <h4>Stalk Us</h4>
                     <div class="social-links">
-                        <a href="https://facebook.com" class="social-link" aria-label="Facebook">📘</a>
-                        <a href="https://instagram.com" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="https://instagram.com" class="social-link" aria-label="Instagram">📸</a>
+                        <a href="https://tiktok.com" class="social-link" aria-label="TikTok">🎵</a>
                         <a href="https://twitter.com" class="social-link" aria-label="Twitter">🐦</a>
-                        <a href="https://youtube.com" class="social-link" aria-label="YouTube">▶️</a>
+                        <a href="https://discord.com" class="social-link" aria-label="Discord">💬</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 PetsInLove. All rights reserved.</p>
+                <p>&copy; 2026 PetsInLove Inc. All rights reserved. No pets were harmed in the making of this app (we think).</p>
                 <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Cookies</a>
                 </div>
             </div>
         </div>
